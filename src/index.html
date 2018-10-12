@@ -1,40 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript" src="bundle.js"></script>
-    <title>SuperGalacticAgeCalculator</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-    <h1>Super Galactic Age Calculator</h1>
-  </div>
-    <h2> Find out your Galactic Age!</h2><hr>
-
-    <form id="input">
-      <div class="form-group">
-      <label for="birthday">Enter your Birthday:</label>
-      <input type="date" id="birthday" name="birthday">
+<head>
+  <script type="text/javascript" src="bundle.js"></script>
+  <title>SuperGalacticAgeCalculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Super Galactic Age Calculator</h1>
+      <br><br><br><br>
+      <h2> Find out your Galactic Age!</h2><hr>
+      <form id="input">
+        <div class="form-group">
+          <select id='month'class ="form-control">
+            <option value=''>--Select Month--</option>
+            <option selected value='01'>Janaury</option>
+            <option value='02'>February</option>
+            <option value='03'>March</option>
+            <option value='04'>April</option>
+            <option value='05'>May</option>
+            <option value='06'>June</option>
+            <option value='07'>July</option>
+            <option value='08'>August</option>
+            <option value='09'>September</option>
+            <option value='10'>October</option>
+            <option value='11'>November</option>
+            <option value='12'>December</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="day" placeholder="Day">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="year" placeholder="Year">
+        </div>
+        <button type="submit" class="btn btn-primary">Calculate</button>
+      </form>
     </div>
-    <button type="sumbit" class="btn btn-primary">Submit</button>
-    </form>
-    <br><br><hr>
 
     <div class="row">
-          <div class="col-md-6">
-            <div class="result">
-              <h3>You are <span id="age"></span> years old</h3>
-              <p>Your age on Mercury: <span id="ageInMercury"></span></p>
-              <p>Your age on Mars: <span id="ageInMars"></span></p>
-              <p>Your age on Venus: <span id="ageInVenus"></span></p>
-              <p>Your age on Jupitor: <span id="ageInJupiter"></span></p>
-            </div>
-          </div>
+      <div class="col-md-6">
+        <div class="result">
+          <h3>Your Age on <img class="planets" src="https://cdn2.iconfinder.com/data/icons/ecology-24/128/6-512.png"> : <span id="age"> </span></h3>
+          <hr>
+          <p>Your age on <img class="planets" src="https://png.icons8.com/color/1600/mercury-planet.png"> : <span id="ageInMercury"></span></p>
+          <hr>
+          <p>Your age on <img class="planets" src="https://cdn3.iconfinder.com/data/icons/solar-system-3/100/Mars-512.png"> : <span id="ageInMars"></span></p>
+          <hr>
+          <p>Your age on <img class="planets" src="https://cdn1.iconfinder.com/data/icons/space-20/64/VENUS-512.png"> : <span id="ageInVenus"></span></p>
+          <hr>
+          <p>Your age on <img class="planets" src="https://image.flaticon.com/icons/png/512/788/788189.png"> : <span id="ageInJupiter"></span></p>
+          <hr>
         </div>
+      </div>
 
-
-
-
+      <div class="col-md-6">
+        <div class="result">
+          <h3>Your life expectancy: <span class="leftInEarth dif"></span> </h3><hr>
+            <p>You have <span class="leftInMercury dif"></span>
+            years left to live on Mercury</p><hr>
+            <p>You have <span class="leftInMars dif"></span>
+            years left to live on Mars</p><hr>
+            <p>You have <span class="leftInVenus dif"></span>
+            years left to live on Venus</p><hr>
+            <p>You have <span class="leftInJupitor dif"></span>
+            years left to live on Jupiter</p><hr>
+        </div>
+      </div>
+    </div>
   </div>
-  </body>
+</body>
 </html>

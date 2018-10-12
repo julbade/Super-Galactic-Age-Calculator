@@ -1,3 +1,22 @@
+body {
+  background-color: #d9d9d9;
+}
+
+.jumbotron {
+  background-image: url(https://i.gadgets360cdn.com/large/star-wars-battlefront-ii_1510128919158.jpg?output-quality=80);
+  background-size: cover;
+  color: gray;
+  text-shadow:1px 1px white;
+}
+
 h1 {
   text-align: center;
+  font-size: 70px;
+  font-family: fantasy;
+
+}
+
+.planets {
+  width: 30px;
+  height: 30px;
 }
