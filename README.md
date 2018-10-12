@@ -16,7 +16,7 @@
 | **Program Gathers User's Age in Venus years** | Age: 27 | Venus age: 43 |
 | **Program Gathers User's Age in Mars years** | Age: 27 | Mars age: 14 |
 | **Program Gathers User's Age in Jupiter years** | Age: 27 | Jupiter age: 2 |
-| **Program Gathers User's Life expectancy depending on average life expectancy** | Age: 27 | Life expectancy: 56 years(based on average man's life expectancy 83 yrs old) |
+| **Program Gathers User's Life expectancy depending on average life expectancy** | Age: 27 | Life expectancy: 52 years(based on average human's life expectancy 79 yrs old) |
 
 
 

@@ -26,7 +26,7 @@ describe ('Calculator Test', function() {
   });
 
   it('should calculate date difference in years', function(){
-		expect(calculator.dateDifferenceInYear("06/02/1991", "10/12/2018")).toEqual(27)
-	});
-
+    expect(calculator.dateDifferenceInYear("06/02/1991", "10/12/2018")).toEqual(27)
+  });
+  
 });

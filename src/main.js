@@ -21,6 +21,13 @@ $(document).ready(function() {
 		$('#ageInVenus').text(calculator.ageOnVenus(age));
 		$('#ageInJupiter').text(calculator.ageOnJupiter(age));
 
+    $('#leftInEarth').text(calculator.yearsLeft(age, "earth"));
+    $('#leftInMercury').text(calculator.yearsLeft(age, "mercury"));
+		$('#leftInMars').text(calculator.yearsLeft(age, "mars"));
+		$('#leftInVenus').text(calculator.yearsLeft(age, "venus"));
+		$('#leftInJupiter').text(calculator.yearsLeft(age, "jupiter"));
+
+
   });
 
 });

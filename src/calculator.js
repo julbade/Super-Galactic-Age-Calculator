@@ -2,11 +2,9 @@ export class Calculator{
 
   constructor (){}
 
-
   ageOnEarth(age) {
     let earthAge = Math.floor(age / 1);
     return earthAge;
-
   }
 
   ageOnMercury(age) {
@@ -43,5 +41,33 @@ export class Calculator{
     years = Math.floor(years)
     return years;
   }
+
+  lifeExpectancy(planet) {
+    let life = 0;
+    var expect = this;
+    if (planet === "earth"){
+      life = 79;
+    }
+    else if (planet === "mercury"){
+      life = expect.ageOnMercury(79)
+    }
+    else if (planet === "venus"){
+      life = expect.ageOnVenus(79)
+    }
+    else if (planet === "mars"){
+      life = expect.ageOnMars(79)
+    }
+    else if (planet === "jupiter"){
+      life = expect.ageOnJupiter(79)
+    }
+    return life;
+  }
+
+  yearsLeft(age, planet){
+    let years = 0;
+    years = this.lifeExpectancy(planet) - age;
+    return years;
+  }
+
 
 }

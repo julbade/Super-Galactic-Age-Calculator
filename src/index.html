@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
   <script type="text/javascript" src="bundle.js"></script>
   <title>SuperGalacticAgeCalculator</title>
 </head>
 <body>
-  <div class="container">
+
     <div class="jumbotron">
       <h1>Super Galactic Age Calculator</h1>
-      <br><br><br><br>
-      <h2> Find out your Galactic Age!</h2><hr>
+      <br><br><br><br><br>
+      <div class="container">
+      <h2> Put your Birhtday</h2><hr>
       <form id="input">
         <div class="form-group">
           <select id='month'class ="form-control">
@@ -37,7 +39,9 @@
         <button type="submit" class="btn btn-primary">Calculate</button>
       </form>
     </div>
-
+      <br><br><br>
+    </div>
+    <div class="container">
     <div class="row">
       <div class="col-md-6">
         <div class="result">
@@ -56,14 +60,14 @@
 
       <div class="col-md-6">
         <div class="result">
-          <h3>Your life expectancy: <span class="leftInEarth dif"></span> </h3><hr>
-            <p>You have <span class="leftInMercury dif"></span>
+          <h3>Your life expectancy: <span id="leftInEarth"></span></h3><hr>
+            <p>You have <span id="leftInMercury"></span>
             years left to live on Mercury</p><hr>
-            <p>You have <span class="leftInMars dif"></span>
+            <p>You have <span id="leftInMars"></span>
             years left to live on Mars</p><hr>
-            <p>You have <span class="leftInVenus dif"></span>
+            <p>You have <span id="leftInVenus"></span>
             years left to live on Venus</p><hr>
-            <p>You have <span class="leftInJupitor dif"></span>
+            <p>You have <span id="leftInJupiter"></span>
             years left to live on Jupiter</p><hr>
         </div>
       </div>
