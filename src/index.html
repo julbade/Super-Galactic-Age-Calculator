@@ -5,6 +5,36 @@
     <title>SuperGalacticAgeCalculator</title>
   </head>
   <body>
-    <p>SuperGalacticAgeCalculator</p>
+    <div class="container">
+      <div class="jumbotron">
+    <h1>Super Galactic Age Calculator</h1>
+  </div>
+    <h2> Find out your Galactic Age!</h2><hr>
+
+    <form id="input">
+      <div class="form-group">
+      <label for="birthday">Enter your Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+    </div>
+    <button type="sumbit" class="btn btn-primary">Submit</button>
+    </form>
+    <br><br><hr>
+
+    <div class="row">
+          <div class="col-md-6">
+            <div class="result">
+              <h3>You are <span id="age"></span> years old</h3>
+              <p>Your age on Mercury: <span id="ageInMercury"></span></p>
+              <p>Your age on Mars: <span id="ageInMars"></span></p>
+              <p>Your age on Venus: <span id="ageInVenus"></span></p>
+              <p>Your age on Jupitor: <span id="ageInJupiter"></span></p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+  </div>
   </body>
 </html>
