@@ -28,9 +28,9 @@ export class Calculator{
   }
 
   dateDifference(startDate, endDate) {
-    let day_start = new Date(startDate);
-    let day_end = new Date(endDate);
-    let differenceInMS = day_end - day_start;
+    let dayStart = new Date(startDate);
+    let dayEnd = new Date(endDate);
+    let differenceInMS = dayEnd - dayStart;
     let differenceInSec = differenceInMS/1000;
     return differenceInSec;
   }
@@ -68,6 +68,5 @@ export class Calculator{
     years = this.lifeExpectancy(planet) - age;
     return years;
   }
-
 
 }
