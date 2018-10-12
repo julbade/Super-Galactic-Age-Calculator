@@ -11,7 +11,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 70px;
+  font-size: 100px;
   font-family: fantasy;
 
 }
@@ -21,8 +21,11 @@ h1 {
   height: 30px;
 }
 
-p, h3 {
-    font-family: 'Megrim';font-size: 22px;
-    
+p{
+    font-family: 'Megrim';font-size: 20px;
 
+}
+
+h3 {
+  font-family: 'Megrim';
 }
